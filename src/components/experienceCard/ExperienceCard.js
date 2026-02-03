@@ -19,14 +19,53 @@ export default function ExperienceCard({cardInfo, isDark}) {
 
   const GetDescBullets = ({descBullets, isDark}) => {
     return descBullets
-      ? descBullets.map((item, i) => (
-          <li
-            key={i}
-            className={isDark ? "subTitle dark-mode-text" : "subTitle"}
-          >
-            {item}
-          </li>
-        ))
+      ? descBullets.map((item, i) => {
+          // Handle string bullets
+          if (typeof item === "string") {
+            return (
+              <li
+                key={i}
+                className={isDark ? "subTitle dark-mode-text" : "subTitle"}
+              >
+                {item}
+              </li>
+            );
+          }
+          // Handle single link object
+          if (item.link) {
+            return (
+              <li
+                key={i}
+                className={isDark ? "subTitle dark-mode-text" : "subTitle"}
+              >
+                {item.text}
+                <a href={item.link} target="_blank" rel="noopener noreferrer">
+                  {item.linkText}
+                </a>
+              </li>
+            );
+          }
+          // Handle multiple links object
+          if (item.links) {
+            return (
+              <li
+                key={i}
+                className={isDark ? "subTitle dark-mode-text" : "subTitle"}
+              >
+                {item.text}
+                {item.links.map((link, idx) => (
+                  <span key={idx}>
+                    <a href={link.url} target="_blank" rel="noopener noreferrer">
+                      {link.text}
+                    </a>
+                    {idx < item.links.length - 1 ? ", " : ""}
+                  </span>
+                ))}
+              </li>
+            );
+          }
+          return null;
+        })
       : null;
   };
 

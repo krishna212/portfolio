@@ -21,10 +21,10 @@ const illustration = {
 
 const greeting = {
   username: "Krishna Sai Mullangi",
-  title: "Hi all, I'm Krishna",
-  subTitle: emoji("Meet Krishna, a driven master's student in Computer Science at California State University, Long Beach. Always open to learning new things and molding myself to different work cultures."),
+  title: "Hi, I'm Krishna",
+  subTitle: "WordPress Developer with 5+ years of experience specializing in content-focused WordPress development, Gutenberg editor, accessibility compliance, and SEO optimization. Passionate about crafting user-centered web experiences with strong information architecture and visual hierarchy.",
   resumeLink:
-    "https://drive.google.com/file/d/1Zw7rDwg3B32xBrn8aquvVgLT0Sgx2-mo/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1gD92WzV9NpwJLAiwKpSGhsfqBHGZojmk/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -42,14 +42,12 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "Unveiling the creator!!",
-  subTitle: "Leveraging my programming skills to optimize workflows - Maximizing results with minimal human input. ",
+  title: "WordPress Expertise",
+  subTitle: "Creating high-performance WordPress websites with focus on accessibility, SEO, and exceptional user experience. Expert in modern WordPress development practices and tools.",
   skills: [
-    emoji("⚡ Master of the Digital Canvas: Full Stack Development for Web and Mobile Platforms"),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Skilled software developer with expertise in Scrum, continuous integration, and debugging, committed to delivering high-quality software solutions."
-    )
+    emoji("⚡ WordPress Development: Gutenberg editor, custom block development, ACF, Elementor, theme customization, and plugin development"),
+    emoji("⚡ Front-End Excellence: CSS3, responsive design, custom styling, visual hierarchy, and cross-browser compatibility"),
+    emoji("⚡ Best Practices: WCAG accessibility compliance, SEO optimization, information architecture, content modeling, and taxonomy management")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -57,15 +55,15 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "Python",
-      fontAwesomeClassname: "fab fa-python"
+      skillName: "WordPress",
+      fontAwesomeClassname: "fab fa-wordpress"
     },
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      skillName: "PHP",
+      fontAwesomeClassname: "fab fa-php"
     },
     {
-      skillName: "css3",
+      skillName: "CSS",
       fontAwesomeClassname: "fab fa-css3-alt"
     },
     {
@@ -73,27 +71,41 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-js"
     },
     {
-      skillName: "reactjs",
+      skillName: "HTML",
+      fontAwesomeClassname: "fab fa-html5"
+    },
+    {
+      skillName: "Gutenberg",
+      fontAwesomeClassname: "fas fa-cube"
+    },
+    {
+      skillName: "ACF",
+      fontAwesomeClassname: "fas fa-layer-group"
+    },
+    {
+      skillName: "Elementor",
+      fontAwesomeClassname: "fas fa-pen-nib"
+    },
+    {
+      skillName: "React",
       fontAwesomeClassname: "fab fa-react"
     },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "sql-database",
+      skillName: "SQL",
       fontAwesomeClassname: "fas fa-database"
     },
     {
-      skillName: "AWS",
-      fontAwesomeClassname: "fab fa-aws"
-
+      skillName: "Git",
+      fontAwesomeClassname: "fab fa-git-alt"
     },
     {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }, 
-  
+      skillName: "SEO",
+      fontAwesomeClassname: "fas fa-search"
+    },
+    {
+      skillName: "Accessibility",
+      fontAwesomeClassname: "fas fa-universal-access"
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -108,16 +120,16 @@ const educationInfo = {
       logo: require("./assets/images/csulb.png"),
       subHeader: "Master of Science in Computer Science",
       duration: "January 2022 - December 2023",
-      desc: "GPA: 3.67", 
-      desc: "Courses: Advanced Analysis of Algorithms Artificial Intelligence, Pattern Recognition"
+      desc: "GPA: 3.70",
+      desc2: "Coursework: Advanced Analysis of Algorithms, Artificial Intelligence, Pattern Recognition"
     },
     {
-      schoolName: "SRM University, India",
+      schoolName: "SRM University, Chennai, India",
       logo: require("./assets/images/srm.png"),
-      subHeader: "Bachelor of Science in Computer Science",
+      subHeader: "Bachelor of Technology in Computer Science and Engineering",
       duration: "August 2016 - May 2020",
       desc: "GPA: 8.12",
-      desc: "Courses: Data Structures, Algorithms Design and Analysis, Database Management Systems, Computer System Architecture, Operating Systems,  Data Science, Web Design, Software Engineering Principles"
+      desc2: "Coursework: Data Structures, Algorithms Design and Analysis, Database Management Systems, Computer System Architecture, Operating Systems, Data Science, Web Design, Software Engineering Principles"
     }
   ]
 };
@@ -128,19 +140,19 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Python", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "WordPress & Gutenberg", //Insert stack or technology you have experience in
+      progressPercentage: "95%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Fullstack Development",
-      progressPercentage: "70%"
+      Stack: "CSS & Responsive Design",
+      progressPercentage: "90%"
     },
     {
-      Stack: "Problem Solving",
-      progressPercentage: "75%"
+      Stack: "ACF & Custom Block Development",
+      progressPercentage: "85%"
     },
     {
-      Stack: "Machine learning",
+      Stack: "Accessibility & SEO Optimization",
       progressPercentage: "85%"
     }
   ],
@@ -153,42 +165,38 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Instructional Student Assistant",
+      role: "Senior WordPress Developer",
+      company: "County of Los Angeles",
+      companylogo: require("./assets/images/lacounty.png"),
+      date: "Mar 2024 - Present",
+      descBullets: [
+        "Maintain WordPress site serving 1M+ monthly visitors, improving content clarity and user flows for adoption/licensing services.",
+        "Enhanced Animal Search plugin UX with responsive design, advanced filters, and detailed profile layouts.",
+        "Improved accessibility compliance from 60 to 95+ using SiteImprove and WCAG 2.1 guidelines.",
+        {text: "Live: ", link: "https://animalcare.lacounty.gov", linkText: "animalcare.lacounty.gov"}
+      ]
+    },
+    {
+      role: "WordPress Developer",
+      company: "Texas Pride Trailers",
+      companylogo: require("./assets/images/texaspridetrailers.png"),
+      date: "Feb 2024 - Feb 2025",
+      descBullets: [
+        "Built 3 WordPress/WooCommerce sites (100K+ monthly visitors) using Elementor and Figma designs.",
+        "Designed self-service quote system replacing phone-based requests, improving user experience and conversion.",
+        "Optimized page speed and SEO, achieving WCAG 2.1 AA accessibility compliance across all sites.",
+        {text: "Live: ", links: [{url: "https://texaspridetrailers.com", text: "texaspridetrailers.com"}, {url: "https://inventory.braysmotor.com/", text: "inventory.braysmotor.com"}, {url: "https://www.braysmotor.com/drive", text: "braysmotor.com/drive"}]}
+      ]
+    },
+    {
+      role: "Software Developer",
       company: "California State University, Long Beach",
       companylogo: require("./assets/images/csulb.png"),
       date: "Aug 2022 - May 2023",
       descBullets: [
-        "Provided instructional support to over 100 students in the Pattern Recognition course through one-on-one tutoring sessions and group study sessions.",
-        "Contributed to the development and implementation of course curriculum and lesson plans.",
-        "Maintained accurate records of student progress, including attendance, grades, and assessment scores, and provided regular updates to the course instructor."
-      ]
-    },
-    {
-      role: "Software Engineer",
-      company: "Temenos",
-      companylogo: require("./assets/images/temenos.png"),
-      date: "July 2020 - Feb 2022",
-      descBullets: [
-        "Led the development of enterprise-level microservices, enhancing functionalities for mobile and web versions of the banking application, resulting in a 20% increase in system efficiency.",
-"Contributed to designing UI components using MVC architecture and its documentation, leading to a 25% improvement in user experience ratings.",
-"Developed REST APIs that managed millions of requests, facilitating seamless end to end middleware communication with the bank servers.",
-"Utilized Android Studio, Xcode, JavaScript for the successful development and maintenance of the banking application.",
-"Implemented continuous agile integration, and deployment practices, including pull requests, analytics, documentation, testing, debugging, and version control using Git, reducing deployment errors by 15%.",
-"Awarded “Fresher of the Year” in 2021 for significant contributions to the project, including the successful integration of credit/debit cards from the banking application to various mobile wallets, which increased transaction efficiency by 40%."]
-    },
-    {
-      role: "Full Stack Developer",
-      company: "Infosys",
-      companylogo: require("./assets/images/infy.jpeg"),
-      date: "Jan 2019 - June 2020",
-      descBullets: [
-        "Redesigned and delivered a responsive User-facing front-end application using React, reducing access time by 50%.",
-        "Coordinated implementation and maintenance of a REST API using the Flask framework and implemented unit tests.",
-        "Managed EC2 instances, efficiently scaling using AWS Console and Terraform, resulting in a 30% reduction in infrastructure costs.",
-        "Utilized DevOps tools such as GIT, Bitbucket, Jenkins, and Ansible for the automated integration and deployment of different components and services of the team into the cloud servers.",
-        "Analyzed and fine-tuned optimized SQL scripts for data extraction, transformation, and loading.",
-        "Handled weekly production releases by achieving 100% unit test passes, documentation, and communicating with stakeholders, the product manager, and the tech lead for approvals.",
-        "Participated in on-call support to troubleshoot and resolve data-related issues with 0% escalations. "
+        "Redesigned student portal serving 40K+ students using React and WordPress custom themes.",
+        "Collaborated with marketing and accessibility teams on mobile-responsive, user-centered design.",
+        "Conducted accessibility testing with Axe DevTools, Lighthouse, and NVDA screen reader."
       ]
     }
   ]
@@ -240,23 +248,8 @@ const bigProjects = {
 
 const achievementSection = {
   title: emoji("Achievements And Certifications 🏆 "),
-
-
-  achievementsCards: [
-    {
-      title: "Machine Learning",
-      subtitle:
-        "In my course, I mastered building machine learning models in Python using NumPy and scikit-learn. I learned to construct and train supervised models for prediction and binary classification tasks, focusing on linear and logistic regression. I gained a deep understanding of machine learning algorithms, including neural networks, SVMs, decision trees, and their practical applications. I also delved into optimization techniques like gradient descent, and the importance of data analysis, scaling, and PCA in preprocessing. This course has equipped me with a robust foundation in machine learning.",
-      image: require("./assets/images/ml.jpeg"),
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://www.coursera.org/account/accomplishments/verify/V2BBFKSYVAV8"
-        }
-      ]
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
+  achievementsCards: [],
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -316,10 +309,10 @@ const podcastSection = {
 };
 
 const contactInfo = {
-  title: emoji("Reach out to me!!"),
+  title: emoji("Let's connect!"),
   subtitle:
-    "DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.",
-  number: "+1 (562)-578-9182",
+    "I'm always open to interesting projects and opportunities. Feel free to reach out!",
+  number: "+1 (562) 578-9182",
   email_address: "krishnasai.mullangi@gmail.com"
 };
 
