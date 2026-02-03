@@ -43,7 +43,7 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "WordPress Expertise",
-  subTitle: "Creating high-performance WordPress websites with focus on accessibility, SEO, and exceptional user experience. Expert in modern WordPress development practices and tools.",
+  subTitle: "Creating high performance WordPress websites with focus on accessibility, SEO, and exceptional user experience. Expert in modern WordPress development practices and tools.",
   skills: [
     emoji("⚡ WordPress Development: Gutenberg editor, custom block development, ACF, Elementor, theme customization, and plugin development"),
     emoji("⚡ Front-End Excellence: CSS3, responsive design, custom styling, visual hierarchy, and cross-browser compatibility"),
